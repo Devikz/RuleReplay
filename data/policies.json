@@ -1,0 +1,30 @@
+{
+  "policies": [
+    {
+      "id": "LATE-FEE-V1", "version": 1, "name": "Standard late fee",
+      "status": "approved", "effective_from": "2026-01-01", "effective_until": "2026-11-01",
+      "selection_basis": "due_date", "grace_days": 5, "fee_cents": 2500, "currency": "USD",
+      "supersedes": null,
+      "provenance": {
+        "document": "SYNTHETIC-POLICY-2026-001 §2.1",
+        "clause": "For loan due dates from January 1, 2026 through October 31, 2026, assess a single USD 25.00 late fee only when payment is more than five calendar days after the due date. Payments on or before the due date have no late fee. Select the policy using the loan due date, never the payment date.",
+        "approved_by": "Fictional Credit Policy Committee",
+        "approved_on": "2025-12-15",
+        "change_reason": "Synthetic baseline policy for the hackathon demonstration."
+      }
+    },
+    {
+      "id": "LATE-FEE-V2", "version": 2, "name": "Extended grace period",
+      "status": "approved", "effective_from": "2026-11-01", "effective_until": null,
+      "selection_basis": "due_date", "grace_days": 7, "fee_cents": 2500, "currency": "USD",
+      "supersedes": "LATE-FEE-V1",
+      "provenance": {
+        "document": "SYNTHETIC-CHANGE-2026-014 §1.2",
+        "clause": "For loan due dates on or after November 1, 2026, extend the grace period from five to seven calendar days. Assess a single USD 25.00 fee only when payment is more than seven calendar days after the due date. Earlier due dates retain V1 even when payment occurs after this change.",
+        "approved_by": "Fictional Credit Policy Committee",
+        "approved_on": "2026-10-15",
+        "change_reason": "Approved two-day grace-period extension; fixed fee unchanged."
+      }
+    }
+  ]
+}

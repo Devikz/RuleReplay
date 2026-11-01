@@ -1,0 +1,1305 @@
+{
+  "status": "measured_local_partial",
+  "seed": 20261029,
+  "case_budget": 48,
+  "created_at": "2026-10-29T17:51:55.594227+00:00",
+  "python": "3.12.16",
+  "execution": "Reviewed local mutant functions",
+  "rows": [
+    {
+      "execution_mode": "reviewed_local_mutants",
+      "invalid_test_rate": 0.0,
+      "execution_failure_rate": 0.0,
+      "authorized_change_checks": 0,
+      "authorized_change_false_positives": 0,
+      "policy_boundary_hits": 0,
+      "policy_boundary_targets": 12,
+      "policy_boundary_coverage": 0.0,
+      "evidence_replay_consistent": true,
+      "cost_usd": null,
+      "token_usage": null,
+      "method": "Conventional examples",
+      "status": "measured locally",
+      "cases": 48,
+      "supported_cases": 48,
+      "detected": 3,
+      "total_defects": 10,
+      "detection_rate": 0.3,
+      "false_alarms": 0,
+      "elapsed_ms": 8.732,
+      "killed": [
+        "D07",
+        "D08",
+        "D09"
+      ],
+      "counterexamples": {
+        "D07": {
+          "case": {
+            "id": "conventional-1-10",
+            "due_date": "2026-06-01",
+            "payment_date": "2026-06-11",
+            "rationale": "Typical same-month on-time and clearly-late example."
+          },
+          "expected_cents": 2500,
+          "actual_cents": 0,
+          "policy_id": "LATE-FEE-V1"
+        },
+        "D08": {
+          "case": {
+            "id": "conventional-1-10",
+            "due_date": "2026-06-01",
+            "payment_date": "2026-06-11",
+            "rationale": "Typical same-month on-time and clearly-late example."
+          },
+          "expected_cents": 2500,
+          "actual_cents": 12500,
+          "policy_id": "LATE-FEE-V1"
+        },
+        "D09": {
+          "case": {
+            "id": "conventional-1-10",
+            "due_date": "2026-06-01",
+            "payment_date": "2026-06-11",
+            "rationale": "Typical same-month on-time and clearly-late example."
+          },
+          "expected_cents": 2500,
+          "actual_cents": 3000,
+          "policy_id": "LATE-FEE-V1"
+        }
+      }
+    },
+    {
+      "execution_mode": "reviewed_local_mutants",
+      "invalid_test_rate": 0.0,
+      "execution_failure_rate": 0.0,
+      "authorized_change_checks": 2,
+      "authorized_change_false_positives": 0,
+      "policy_boundary_hits": 2,
+      "policy_boundary_targets": 12,
+      "policy_boundary_coverage": 0.16666666666666666,
+      "evidence_replay_consistent": true,
+      "cost_usd": null,
+      "token_usage": null,
+      "method": "Seeded random / oracle property",
+      "status": "measured locally",
+      "cases": 48,
+      "supported_cases": 48,
+      "detected": 6,
+      "total_defects": 10,
+      "detection_rate": 0.6,
+      "false_alarms": 0,
+      "elapsed_ms": 6.919,
+      "killed": [
+        "D02",
+        "D03",
+        "D06",
+        "D07",
+        "D08",
+        "D09"
+      ],
+      "counterexamples": {
+        "D02": {
+          "case": {
+            "id": "random-32",
+            "due_date": "2026-01-31",
+            "payment_date": "2026-02-05",
+            "rationale": "Seeded uniform calendar and delay sampling."
+          },
+          "expected_cents": 0,
+          "actual_cents": 2500,
+          "policy_id": "LATE-FEE-V1"
+        },
+        "D03": {
+          "case": {
+            "id": "random-20",
+            "due_date": "2028-12-07",
+            "payment_date": "2028-12-13",
+            "rationale": "Seeded uniform calendar and delay sampling."
+          },
+          "expected_cents": 0,
+          "actual_cents": 2500,
+          "policy_id": "LATE-FEE-V2"
+        },
+        "D06": {
+          "case": {
+            "id": "random-4",
+            "due_date": "2027-08-04",
+            "payment_date": "2027-07-30",
+            "rationale": "Seeded uniform calendar and delay sampling."
+          },
+          "expected_cents": 0,
+          "actual_cents": 2500,
+          "policy_id": "LATE-FEE-V2"
+        },
+        "D07": {
+          "case": {
+            "id": "random-2",
+            "due_date": "2027-04-08",
+            "payment_date": "2027-04-18",
+            "rationale": "Seeded uniform calendar and delay sampling."
+          },
+          "expected_cents": 2500,
+          "actual_cents": 0,
+          "policy_id": "LATE-FEE-V2"
+        },
+        "D08": {
+          "case": {
+            "id": "random-2",
+            "due_date": "2027-04-08",
+            "payment_date": "2027-04-18",
+            "rationale": "Seeded uniform calendar and delay sampling."
+          },
+          "expected_cents": 2500,
+          "actual_cents": 7500,
+          "policy_id": "LATE-FEE-V2"
+        },
+        "D09": {
+          "case": {
+            "id": "random-2",
+            "due_date": "2027-04-08",
+            "payment_date": "2027-04-18",
+            "rationale": "Seeded uniform calendar and delay sampling."
+          },
+          "expected_cents": 2500,
+          "actual_cents": 3000,
+          "policy_id": "LATE-FEE-V2"
+        }
+      }
+    },
+    {
+      "execution_mode": "reviewed_local_mutants",
+      "invalid_test_rate": 0.0,
+      "execution_failure_rate": 0.0,
+      "authorized_change_checks": 6,
+      "authorized_change_false_positives": 0,
+      "policy_boundary_hits": 12,
+      "policy_boundary_targets": 12,
+      "policy_boundary_coverage": 1.0,
+      "evidence_replay_consistent": true,
+      "cost_usd": null,
+      "token_usage": null,
+      "method": "RuleReplay offline boundaries (ablation)",
+      "status": "measured locally",
+      "cases": 48,
+      "supported_cases": 39,
+      "detected": 10,
+      "total_defects": 10,
+      "detection_rate": 1.0,
+      "false_alarms": 0,
+      "elapsed_ms": 6.744,
+      "killed": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D05",
+        "D06",
+        "D07",
+        "D08",
+        "D09",
+        "D10"
+      ],
+      "counterexamples": {
+        "D01": {
+          "case": {
+            "id": "boundary-01",
+            "due_date": "2026-10-30",
+            "payment_date": "2026-11-05",
+            "rationale": "Payment crosses policy change; due date must retain the predecessor rule."
+          },
+          "expected_cents": 2500,
+          "actual_cents": 0,
+          "policy_id": "LATE-FEE-V1"
+        },
+        "D02": {
+          "case": {
+            "id": "boundary-03",
+            "due_date": "2026-01-01",
+            "payment_date": "2026-01-06",
+            "rationale": "Exact grace boundary, adjacent day, or early pay."
+          },
+          "expected_cents": 0,
+          "actual_cents": 2500,
+          "policy_id": "LATE-FEE-V1"
+        },
+        "D03": {
+          "case": {
+            "id": "boundary-02",
+            "due_date": "2026-11-01",
+            "payment_date": "2026-11-07",
+            "rationale": "Authorized grace-period extension."
+          },
+          "expected_cents": 0,
+          "actual_cents": 2500,
+          "policy_id": "LATE-FEE-V2"
+        },
+        "D04": {
+          "case": {
+            "id": "boundary-01",
+            "due_date": "2026-10-30",
+            "payment_date": "2026-11-05",
+            "rationale": "Payment crosses policy change; due date must retain the predecessor rule."
+          },
+          "expected_cents": 2500,
+          "actual_cents": 0,
+          "policy_id": "LATE-FEE-V1"
+        },
+        "D05": {
+          "case": {
+            "id": "boundary-02",
+            "due_date": "2026-11-01",
+            "payment_date": "2026-11-07",
+            "rationale": "Authorized grace-period extension."
+          },
+          "expected_cents": 0,
+          "actual_cents": 2500,
+          "policy_id": "LATE-FEE-V2"
+        },
+        "D06": {
+          "case": {
+            "id": "boundary-01",
+            "due_date": "2026-10-30",
+            "payment_date": "2026-11-05",
+            "rationale": "Payment crosses policy change; due date must retain the predecessor rule."
+          },
+          "expected_cents": 2500,
+          "actual_cents": 0,
+          "policy_id": "LATE-FEE-V1"
+        },
+        "D07": {
+          "case": {
+            "id": "boundary-01",
+            "due_date": "2026-10-30",
+            "payment_date": "2026-11-05",
+            "rationale": "Payment crosses policy change; due date must retain the predecessor rule."
+          },
+          "expected_cents": 2500,
+          "actual_cents": 0,
+          "policy_id": "LATE-FEE-V1"
+        },
+        "D08": {
+          "case": {
+            "id": "boundary-25",
+            "due_date": "2026-01-02",
+            "payment_date": "2026-01-09",
+            "rationale": "Policy transition neighborhood."
+          },
+          "expected_cents": 2500,
+          "actual_cents": 5000,
+          "policy_id": "LATE-FEE-V1"
+        },
+        "D09": {
+          "case": {
+            "id": "boundary-01",
+            "due_date": "2026-10-30",
+            "payment_date": "2026-11-05",
+            "rationale": "Payment crosses policy change; due date must retain the predecessor rule."
+          },
+          "expected_cents": 2500,
+          "actual_cents": 3000,
+          "policy_id": "LATE-FEE-V1"
+        },
+        "D10": {
+          "case": {
+            "id": "boundary-14",
+            "due_date": "2028-02-28",
+            "payment_date": "2028-03-07",
+            "rationale": "Leap day at the first chargeable calendar day."
+          },
+          "expected_cents": 2500,
+          "actual_cents": 0,
+          "policy_id": "LATE-FEE-V2"
+        }
+      }
+    },
+    {
+      "method": "AI tests without policy context",
+      "status": "not run \u2014 paid approval required",
+      "cases": null,
+      "supported_cases": null,
+      "detected": null,
+      "total_defects": 10,
+      "detection_rate": null,
+      "false_alarms": null,
+      "elapsed_ms": null,
+      "killed": []
+    },
+    {
+      "method": "Full RuleReplay / Muse Wonder",
+      "status": "not run \u2014 paid approval required",
+      "cases": null,
+      "supported_cases": null,
+      "detected": null,
+      "total_defects": 10,
+      "detection_rate": null,
+      "false_alarms": null,
+      "elapsed_ms": null,
+      "killed": []
+    }
+  ],
+  "defects": [
+    {
+      "id": "D01",
+      "description": "Select policy by payment date instead of due date",
+      "detected_by": [
+        "RuleReplay offline boundaries (ablation)"
+      ]
+    },
+    {
+      "id": "D02",
+      "description": "Charge on the exact grace day (inclusive threshold)",
+      "detected_by": [
+        "Seeded random / oracle property",
+        "RuleReplay offline boundaries (ablation)"
+      ]
+    },
+    {
+      "id": "D03",
+      "description": "Keep the five-day V1 grace period forever",
+      "detected_by": [
+        "Seeded random / oracle property",
+        "RuleReplay offline boundaries (ablation)"
+      ]
+    },
+    {
+      "id": "D04",
+      "description": "Apply seven-day grace retroactively to all due dates",
+      "detected_by": [
+        "RuleReplay offline boundaries (ablation)"
+      ]
+    },
+    {
+      "id": "D05",
+      "description": "Apply V2 only after, not on, its effective date",
+      "detected_by": [
+        "RuleReplay offline boundaries (ablation)"
+      ]
+    },
+    {
+      "id": "D06",
+      "description": "Subtract day-of-month values instead of calendar dates",
+      "detected_by": [
+        "Seeded random / oracle property",
+        "RuleReplay offline boundaries (ablation)"
+      ]
+    },
+    {
+      "id": "D07",
+      "description": "Reverse payment and due dates in lateness calculation",
+      "detected_by": [
+        "Conventional examples",
+        "Seeded random / oracle property",
+        "RuleReplay offline boundaries (ablation)"
+      ]
+    },
+    {
+      "id": "D08",
+      "description": "Charge USD 25 per late day instead of a single fee",
+      "detected_by": [
+        "Conventional examples",
+        "Seeded random / oracle property",
+        "RuleReplay offline boundaries (ablation)"
+      ]
+    },
+    {
+      "id": "D09",
+      "description": "Charge USD 30 instead of USD 25",
+      "detected_by": [
+        "Conventional examples",
+        "Seeded random / oracle property",
+        "RuleReplay offline boundaries (ablation)"
+      ]
+    },
+    {
+      "id": "D10",
+      "description": "Drop leap days from elapsed-calendar-day calculation",
+      "detected_by": [
+        "RuleReplay offline boundaries (ablation)"
+      ]
+    }
+  ],
+  "suites": {
+    "Conventional examples": [
+      {
+        "id": "conventional-1-0",
+        "due_date": "2026-06-01",
+        "payment_date": "2026-06-01",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-1-3",
+        "due_date": "2026-06-01",
+        "payment_date": "2026-06-04",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-1-10",
+        "due_date": "2026-06-01",
+        "payment_date": "2026-06-11",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-1-14",
+        "due_date": "2026-06-01",
+        "payment_date": "2026-06-15",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-2-0",
+        "due_date": "2026-06-02",
+        "payment_date": "2026-06-02",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-2-3",
+        "due_date": "2026-06-02",
+        "payment_date": "2026-06-05",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-2-10",
+        "due_date": "2026-06-02",
+        "payment_date": "2026-06-12",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-2-14",
+        "due_date": "2026-06-02",
+        "payment_date": "2026-06-16",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-3-0",
+        "due_date": "2026-06-03",
+        "payment_date": "2026-06-03",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-3-3",
+        "due_date": "2026-06-03",
+        "payment_date": "2026-06-06",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-3-10",
+        "due_date": "2026-06-03",
+        "payment_date": "2026-06-13",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-3-14",
+        "due_date": "2026-06-03",
+        "payment_date": "2026-06-17",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-4-0",
+        "due_date": "2026-06-04",
+        "payment_date": "2026-06-04",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-4-3",
+        "due_date": "2026-06-04",
+        "payment_date": "2026-06-07",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-4-10",
+        "due_date": "2026-06-04",
+        "payment_date": "2026-06-14",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-4-14",
+        "due_date": "2026-06-04",
+        "payment_date": "2026-06-18",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-5-0",
+        "due_date": "2026-06-05",
+        "payment_date": "2026-06-05",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-5-3",
+        "due_date": "2026-06-05",
+        "payment_date": "2026-06-08",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-5-10",
+        "due_date": "2026-06-05",
+        "payment_date": "2026-06-15",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-5-14",
+        "due_date": "2026-06-05",
+        "payment_date": "2026-06-19",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-6-0",
+        "due_date": "2026-06-06",
+        "payment_date": "2026-06-06",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-6-3",
+        "due_date": "2026-06-06",
+        "payment_date": "2026-06-09",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-6-10",
+        "due_date": "2026-06-06",
+        "payment_date": "2026-06-16",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-6-14",
+        "due_date": "2026-06-06",
+        "payment_date": "2026-06-20",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-7-0",
+        "due_date": "2026-06-07",
+        "payment_date": "2026-06-07",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-7-3",
+        "due_date": "2026-06-07",
+        "payment_date": "2026-06-10",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-7-10",
+        "due_date": "2026-06-07",
+        "payment_date": "2026-06-17",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-7-14",
+        "due_date": "2026-06-07",
+        "payment_date": "2026-06-21",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-8-0",
+        "due_date": "2026-06-08",
+        "payment_date": "2026-06-08",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-8-3",
+        "due_date": "2026-06-08",
+        "payment_date": "2026-06-11",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-8-10",
+        "due_date": "2026-06-08",
+        "payment_date": "2026-06-18",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-8-14",
+        "due_date": "2026-06-08",
+        "payment_date": "2026-06-22",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-9-0",
+        "due_date": "2026-06-09",
+        "payment_date": "2026-06-09",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-9-3",
+        "due_date": "2026-06-09",
+        "payment_date": "2026-06-12",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-9-10",
+        "due_date": "2026-06-09",
+        "payment_date": "2026-06-19",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-9-14",
+        "due_date": "2026-06-09",
+        "payment_date": "2026-06-23",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-10-0",
+        "due_date": "2026-06-10",
+        "payment_date": "2026-06-10",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-10-3",
+        "due_date": "2026-06-10",
+        "payment_date": "2026-06-13",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-10-10",
+        "due_date": "2026-06-10",
+        "payment_date": "2026-06-20",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-10-14",
+        "due_date": "2026-06-10",
+        "payment_date": "2026-06-24",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-11-0",
+        "due_date": "2026-06-11",
+        "payment_date": "2026-06-11",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-11-3",
+        "due_date": "2026-06-11",
+        "payment_date": "2026-06-14",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-11-10",
+        "due_date": "2026-06-11",
+        "payment_date": "2026-06-21",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-11-14",
+        "due_date": "2026-06-11",
+        "payment_date": "2026-06-25",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-12-0",
+        "due_date": "2026-06-12",
+        "payment_date": "2026-06-12",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-12-3",
+        "due_date": "2026-06-12",
+        "payment_date": "2026-06-15",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-12-10",
+        "due_date": "2026-06-12",
+        "payment_date": "2026-06-22",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      },
+      {
+        "id": "conventional-12-14",
+        "due_date": "2026-06-12",
+        "payment_date": "2026-06-26",
+        "rationale": "Typical same-month on-time and clearly-late example."
+      }
+    ],
+    "Seeded random / oracle property": [
+      {
+        "id": "random-1",
+        "due_date": "2028-12-28",
+        "payment_date": "2029-01-01",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-2",
+        "due_date": "2027-04-08",
+        "payment_date": "2027-04-18",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-3",
+        "due_date": "2027-12-16",
+        "payment_date": "2027-12-20",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-4",
+        "due_date": "2027-08-04",
+        "payment_date": "2027-07-30",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-5",
+        "due_date": "2028-07-27",
+        "payment_date": "2028-08-08",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-6",
+        "due_date": "2028-05-18",
+        "payment_date": "2028-06-05",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-7",
+        "due_date": "2026-06-28",
+        "payment_date": "2026-07-13",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-8",
+        "due_date": "2027-07-10",
+        "payment_date": "2027-07-22",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-9",
+        "due_date": "2027-06-20",
+        "payment_date": "2027-06-14",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-10",
+        "due_date": "2028-05-17",
+        "payment_date": "2028-06-05",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-11",
+        "due_date": "2027-04-19",
+        "payment_date": "2027-05-07",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-12",
+        "due_date": "2028-10-22",
+        "payment_date": "2028-10-16",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-13",
+        "due_date": "2027-06-07",
+        "payment_date": "2027-06-08",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-14",
+        "due_date": "2026-08-03",
+        "payment_date": "2026-08-17",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-15",
+        "due_date": "2027-05-16",
+        "payment_date": "2027-05-08",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-16",
+        "due_date": "2027-10-03",
+        "payment_date": "2027-10-13",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-17",
+        "due_date": "2027-07-28",
+        "payment_date": "2027-07-24",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-18",
+        "due_date": "2028-06-19",
+        "payment_date": "2028-06-21",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-19",
+        "due_date": "2027-02-18",
+        "payment_date": "2027-02-14",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-20",
+        "due_date": "2028-12-07",
+        "payment_date": "2028-12-13",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-21",
+        "due_date": "2026-09-07",
+        "payment_date": "2026-09-24",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-22",
+        "due_date": "2026-07-26",
+        "payment_date": "2026-07-21",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-23",
+        "due_date": "2027-09-23",
+        "payment_date": "2027-09-16",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-24",
+        "due_date": "2027-03-15",
+        "payment_date": "2027-03-25",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-25",
+        "due_date": "2028-09-24",
+        "payment_date": "2028-09-23",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-26",
+        "due_date": "2028-05-05",
+        "payment_date": "2028-05-25",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-27",
+        "due_date": "2026-09-22",
+        "payment_date": "2026-09-16",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-28",
+        "due_date": "2028-05-18",
+        "payment_date": "2028-06-04",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-29",
+        "due_date": "2028-07-07",
+        "payment_date": "2028-07-25",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-30",
+        "due_date": "2028-08-29",
+        "payment_date": "2028-08-31",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-31",
+        "due_date": "2028-05-14",
+        "payment_date": "2028-05-28",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-32",
+        "due_date": "2026-01-31",
+        "payment_date": "2026-02-05",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-33",
+        "due_date": "2026-03-24",
+        "payment_date": "2026-04-12",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-34",
+        "due_date": "2028-11-19",
+        "payment_date": "2028-11-28",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-35",
+        "due_date": "2027-08-11",
+        "payment_date": "2027-08-27",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-36",
+        "due_date": "2028-05-14",
+        "payment_date": "2028-05-18",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-37",
+        "due_date": "2027-11-05",
+        "payment_date": "2027-10-30",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-38",
+        "due_date": "2028-06-15",
+        "payment_date": "2028-06-19",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-39",
+        "due_date": "2027-09-22",
+        "payment_date": "2027-10-05",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-40",
+        "due_date": "2026-12-12",
+        "payment_date": "2026-12-27",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-41",
+        "due_date": "2028-01-27",
+        "payment_date": "2028-02-08",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-42",
+        "due_date": "2026-07-09",
+        "payment_date": "2026-07-10",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-43",
+        "due_date": "2027-10-16",
+        "payment_date": "2027-10-14",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-44",
+        "due_date": "2028-07-01",
+        "payment_date": "2028-07-06",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-45",
+        "due_date": "2028-06-09",
+        "payment_date": "2028-06-23",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-46",
+        "due_date": "2028-06-09",
+        "payment_date": "2028-06-07",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-47",
+        "due_date": "2028-06-29",
+        "payment_date": "2028-07-05",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      },
+      {
+        "id": "random-48",
+        "due_date": "2027-08-28",
+        "payment_date": "2027-08-23",
+        "rationale": "Seeded uniform calendar and delay sampling."
+      }
+    ],
+    "RuleReplay offline boundaries (ablation)": [
+      {
+        "id": "boundary-01",
+        "due_date": "2026-10-30",
+        "payment_date": "2026-11-05",
+        "rationale": "Payment crosses policy change; due date must retain the predecessor rule."
+      },
+      {
+        "id": "boundary-02",
+        "due_date": "2026-11-01",
+        "payment_date": "2026-11-07",
+        "rationale": "Authorized grace-period extension."
+      },
+      {
+        "id": "boundary-03",
+        "due_date": "2026-01-01",
+        "payment_date": "2026-01-06",
+        "rationale": "Exact grace boundary, adjacent day, or early pay."
+      },
+      {
+        "id": "boundary-04",
+        "due_date": "2026-01-01",
+        "payment_date": "2026-01-07",
+        "rationale": "Exact grace boundary, adjacent day, or early pay."
+      },
+      {
+        "id": "boundary-05",
+        "due_date": "2026-01-01",
+        "payment_date": "2026-01-05",
+        "rationale": "Exact grace boundary, adjacent day, or early pay."
+      },
+      {
+        "id": "boundary-06",
+        "due_date": "2026-01-01",
+        "payment_date": "2026-01-01",
+        "rationale": "Exact grace boundary, adjacent day, or early pay."
+      },
+      {
+        "id": "boundary-07",
+        "due_date": "2026-01-01",
+        "payment_date": "2025-12-31",
+        "rationale": "Exact grace boundary, adjacent day, or early pay."
+      },
+      {
+        "id": "boundary-08",
+        "due_date": "2026-11-01",
+        "payment_date": "2026-11-08",
+        "rationale": "Exact grace boundary, adjacent day, or early pay."
+      },
+      {
+        "id": "boundary-09",
+        "due_date": "2026-11-01",
+        "payment_date": "2026-11-09",
+        "rationale": "Exact grace boundary, adjacent day, or early pay."
+      },
+      {
+        "id": "boundary-11",
+        "due_date": "2026-11-01",
+        "payment_date": "2026-11-01",
+        "rationale": "Exact grace boundary, adjacent day, or early pay."
+      },
+      {
+        "id": "boundary-12",
+        "due_date": "2026-11-01",
+        "payment_date": "2026-10-31",
+        "rationale": "Exact grace boundary, adjacent day, or early pay."
+      },
+      {
+        "id": "boundary-13",
+        "due_date": "2025-12-20",
+        "payment_date": "2025-12-28",
+        "rationale": "No supplied approved policy covers this historical due date."
+      },
+      {
+        "id": "boundary-14",
+        "due_date": "2028-02-28",
+        "payment_date": "2028-03-07",
+        "rationale": "Leap day at the first chargeable calendar day."
+      },
+      {
+        "id": "boundary-15",
+        "due_date": "2025-12-25",
+        "payment_date": "2025-12-30",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-16",
+        "due_date": "2025-12-25",
+        "payment_date": "2025-12-31",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-17",
+        "due_date": "2025-12-25",
+        "payment_date": "2026-01-01",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-18",
+        "due_date": "2025-12-25",
+        "payment_date": "2026-01-02",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-19",
+        "due_date": "2025-12-31",
+        "payment_date": "2026-01-05",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-20",
+        "due_date": "2025-12-31",
+        "payment_date": "2026-01-06",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-21",
+        "due_date": "2025-12-31",
+        "payment_date": "2026-01-07",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-22",
+        "due_date": "2025-12-31",
+        "payment_date": "2026-01-08",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-23",
+        "due_date": "2026-01-02",
+        "payment_date": "2026-01-07",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-24",
+        "due_date": "2026-01-02",
+        "payment_date": "2026-01-08",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-25",
+        "due_date": "2026-01-02",
+        "payment_date": "2026-01-09",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-26",
+        "due_date": "2026-01-02",
+        "payment_date": "2026-01-10",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-27",
+        "due_date": "2026-01-08",
+        "payment_date": "2026-01-13",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-28",
+        "due_date": "2026-01-08",
+        "payment_date": "2026-01-14",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-29",
+        "due_date": "2026-01-08",
+        "payment_date": "2026-01-15",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-30",
+        "due_date": "2026-01-08",
+        "payment_date": "2026-01-16",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-31",
+        "due_date": "2026-01-31",
+        "payment_date": "2026-02-05",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-32",
+        "due_date": "2026-01-31",
+        "payment_date": "2026-02-06",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-33",
+        "due_date": "2026-01-31",
+        "payment_date": "2026-02-07",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-34",
+        "due_date": "2026-01-31",
+        "payment_date": "2026-02-08",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-35",
+        "due_date": "2026-10-25",
+        "payment_date": "2026-10-30",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-36",
+        "due_date": "2026-10-25",
+        "payment_date": "2026-10-31",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-37",
+        "due_date": "2026-10-25",
+        "payment_date": "2026-11-01",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-38",
+        "due_date": "2026-10-25",
+        "payment_date": "2026-11-02",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-39",
+        "due_date": "2026-10-31",
+        "payment_date": "2026-11-05",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-40",
+        "due_date": "2026-10-31",
+        "payment_date": "2026-11-06",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-41",
+        "due_date": "2026-10-31",
+        "payment_date": "2026-11-07",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-42",
+        "due_date": "2026-10-31",
+        "payment_date": "2026-11-08",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-43",
+        "due_date": "2026-11-02",
+        "payment_date": "2026-11-07",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-44",
+        "due_date": "2026-11-02",
+        "payment_date": "2026-11-08",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-45",
+        "due_date": "2026-11-02",
+        "payment_date": "2026-11-09",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-46",
+        "due_date": "2026-11-02",
+        "payment_date": "2026-11-10",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-47",
+        "due_date": "2026-11-08",
+        "payment_date": "2026-11-13",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-48",
+        "due_date": "2026-11-08",
+        "payment_date": "2026-11-14",
+        "rationale": "Policy transition neighborhood."
+      },
+      {
+        "id": "boundary-49",
+        "due_date": "2026-11-08",
+        "payment_date": "2026-11-15",
+        "rationale": "Policy transition neighborhood."
+      }
+    ]
+  },
+  "generation_receipts": {},
+  "policy_sha256": "039c22b58dca2a6856a76d3cae37b6a36e1697a900d308d1bf7f70201245e0b6",
+  "benchmark_source_sha256": "efb59f42d9e67cc725a16cc489262f47f28a1fe8840a8b8313d432087180f913",
+  "limitations": [
+    "Offline boundaries were tuned after observing the D10 leap-day survivor. This is in-sample defect detection, not a held-out generalization result.",
+    "Replay consistency measures saved simulator evidence, not code re-execution or LLM reproduction. Invalid-test and execution-failure rates cover validated local suites and reviewed mutant functions only. Costs and tokens are unavailable.",
+    "AI ablations have no measurements until explicitly approved live Meta requests run. Offline boundary results are not evidence of Muse Wonder performance.",
+    "Ten deliberately seeded defects in one synthetic policy domain; this is not a representative financial-software benchmark or proof of general superiority.",
+    "All measured methods share the independent oracle as the evaluator. The comparison isolates input selection, not the quality of manually written expected values.",
+    "Each method has a 48-case budget. Evidence gaps are excluded from defect scoring and reported as unsupported cases. False alarms use the independent correct control.",
+    "Random sampling uses one disclosed seed; Hypothesis metamorphic tests are separate. Wall-clock times vary. No Modal latency or cost has been measured."
+  ]
+}
