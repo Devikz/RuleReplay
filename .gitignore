@@ -218,3 +218,24 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# RuleReplay secrets, dependencies, build artifacts, and local caches
+.env.*
+!.env.example
+.venv/
+node_modules/
+.DS_Store
+.cache/
+.vite/
+.next/
+.turbo/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+.local/
+.uv-cache/
+
+# Disposable browser test output
+frontend/test-results/
+frontend/playwright-report/
